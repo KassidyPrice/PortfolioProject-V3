@@ -1,0 +1,168 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+}
+.container {
+  display: flex;
+  width: 100vw;
+}
+.panel {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 95vh;
+  border-radius: 50px;
+  color: antiquewhite;
+  cursor: pointer;
+  flex: 0.5;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  transition: flex 0.7s ease-in;
+}
+.panel.active {
+  flex: 7;
+}
+.panel h1 {
+  font-size: 70px;
+  opacity: 0;
+  position: absolute;
+}
+.panel.active h1 {
+  background-color: aliceblue;
+  opacity: 0.9;
+  color: #293851;
+  width: 50%;
+  font-size: 70px;
+  text-align: center;
+  border-radius: 20px;
+  box-shadow: -5px 10px 5px 4px #b59d98;
+  transition: opacity 0.3s ease-in 0.4s;
+}
+.panel h2 {
+  font-size: 24px;
+  opacity: 0;
+  position: absolute;
+}
+.panel.active h2 {
+  color: #1e150f;
+  font-size: 70px;
+  position: absolute;
+  bottom: 30px;
+  right: 25px;
+  text-shadow: -2px 2px 10px #293851;
+  opacity: 1;
+  transition: opacity 0.3s ease-in 0.4s;
+}
+.panel h3 {
+  opacity: 0;
+  position: absolute;
+}
+.panel.active h3 {
+  color: #293851;
+  font-size: 70px;
+  position: absolute;
+  top: 20px;
+  left: 25px;
+  text-shadow: -2px 2px 10px #293851;
+  opacity: 1;
+  transition: opacity 0.3s ease-in 0.4s;
+}
+.panel p {
+  opacity: 0;
+  position: absolute;
+}
+.panel.active p {
+  color: #293851;
+  font-size: 70px;
+  position: absolute;
+  /* top: 30px;
+  left: 25px; */
+  text-shadow: -2px 2px 10px #293851;
+  opacity: 1;
+  transition: opacity 0.3s ease-in 0.4s;
+}
+/* .arrow-right {
+  position: absolute;
+  right: 1%;
+  top: 50%;
+} */
+/* @media (max-width: 400px) {
+  .container {
+    width: 100vw;
+  }
+  .panel:nth-of-type(4),
+  .panel:nth-of-type(5) {
+    display: none;
+  }
+} */
+
+/* .portrait {
+  width: 250px;
+  box-shadow: -2px 2px 10px 2px #293851;
+}
+.portrait:hover {
+  width: 270px;
+  box-shadow: -2px 2px 10px 2px #293851;
+}
+.landscape {
+  height: 250px;
+  box-shadow: -2px 2px 10px 2px #293851;
+}
+.landscape:hover {
+  height: 270px;
+  box-shadow: -2px 2px 10px 2px #293851;
+}
+.img1 {
+  position: absolute;
+  top: 40px;
+  right: 55px;
+  transform: rotate(20deg);
+  z-index: 0;
+}
+.img2 {
+  position: absolute;
+  top: 90px;
+  right: 295px;
+  transform: rotate(350deg);
+  z-index: 1;
+}
+.img3 {
+  position: absolute;
+  top: 25px;
+  right: 550px;
+  transform: rotate(10deg);
+  z-index: 0;
+}
+.img4 {
+  position: absolute;
+  bottom: 35px;
+  left: 450px;
+  transform: rotate(20deg);
+  z-index: 1;
+}
+.img5 {
+  position: absolute;
+  bottom: 70px;
+  left: 20px;
+  transform: rotate(340deg);
+  z-index: 1;
+}
+.img6 {
+  position: absolute;
+  top: 20px;
+  left: 220px;
+  transform: rotate(350deg);
+  z-index: 1;
+} */
