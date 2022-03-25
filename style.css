@@ -142,33 +142,42 @@ body {
   opacity: 1;
   transition: opacity 0.3s ease-in 0.4s;
 }
-.panel p {
+.panel table {
   opacity: 0;
   position: absolute;
 }
-.panel.active p {
+.panel.active table {
+  opacity: 1;
+  transition: opacity 0.3s ease-in 0.4s;
+  margin-top: 3rem;
+}
+.panel th {
+  opacity: 0;
+}
+.panel.active th {
   color: #293851;
   font-size: 3rem;
-  position: absolute;
+  padding: 1rem 4rem;
+
   text-shadow: -2px 2px 10px #293851;
   opacity: 1;
   transition: opacity 0.3s ease-in 0.4s;
 }
-.panel.active p:hover {
+.panel.active th:hover {
   font-size: 4rem;
   text-shadow: -2px 2px 10px #293851;
 }
-.html {
-  top: 20%;
-  left: 10%;
+.panel td {
+  opacity: 0;
 }
-.css {
-  top: 30%;
-  left: 10%;
-}
-.javascript {
-  top: 40%;
-  left: 10%;
+.panel.active td {
+  color: #293851;
+  font-size: 2rem;
+  padding: 1rem;
+  text-align: center;
+  text-shadow: -2px 2px 10px #293851;
+  opacity: 1;
+  transition: opacity 0.3s ease-in 0.4s;
 }
 /* Contact */
 .panel a {
@@ -180,10 +189,62 @@ body {
   text-shadow: -2px 2px 10px #293851;
   text-decoration: none;
   opacity: 1;
-  transition: opacity 0.3s ease-in 0.4s;
+  transition: all ease-in 0.4s;
 }
 
 .panel.active a:hover {
   font-size: 9rem;
   text-shadow: -2px 2px 10px #293851;
+}
+/* MODAL CSS */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 300px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 200px;
+  height: 120px;
+  border-radius: 5px;
+}
+
+#modal-title {
+  margin-top: 0;
+  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+  font-weight: 500;
+  line-height: 1.6;
+  letter-spacing: 0.0075em;
+  font-size: 20px;
+}
+
+/* The Close Button */
+.close {
+  float: right;
+  font-size: 14px;
+  color: #3f51b5;
+  background-color: #fff;
+  border: none;
+  height: 30px;
+  border-radius: 5px;
+}
+
+.close:hover,
+.close:focus {
+  background-color: rgba(63, 81, 181, 0.04);
+  text-decoration: none;
+  cursor: pointer;
 }

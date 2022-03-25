@@ -9,9 +9,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
-      rel="stylesheet"/>
-      <script src="https://kit.fontawesome.com/b4848c0b03.js" crossorigin="anonymous"></script>
-    
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/b4848c0b03.js"
+      crossorigin="anonymous"
+    ></script>
+
     <link rel="stylesheet" href="./style.css" />
     <script
       src="https://kit.fontawesome.com/b4848c0b03.js"
@@ -55,9 +59,23 @@
         "
       >
         <h3>Developing/Skills></h3>
-        <p class="html">HTML</p>
-        <p class="css">CSS</p>
-        <p class="javascript">JavaScript</p>
+        <table>
+          <tr>
+            <th>HTML</th>
+            <th>CSS</th>
+            <th>JavaScript</th>
+          </tr>
+          <tr>
+            <td>HTML 5</td>
+            <td>Bootstrap</td>
+            <td>Vanilla</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>Sass</td>
+            <td></td>
+          </tr>
+        </table>
       </div>
       <div
         class="panel"
@@ -67,10 +85,24 @@
         "
       >
         <h3>Developing/Relationships></h3>
-        <a class="fa-brands fa-github-square" href="https://github.com/KassidyPrice"></a>
-        <a class="fa-brands fa-linkedin" href="https://www.linkedin.com/in/kassidy-price"></a>
+        <a
+          class="fa-brands fa-github-square"
+          href="https://github.com/KassidyPrice"
+        ></a>
+        <a
+          class="fa-brands fa-linkedin"
+          href="https://www.linkedin.com/in/kassidy-price"
+        ></a>
         <a class="fa-brands fa-codepen" href="https://codepen.io/kassidyp"></a>
-      
+      </div>
+      <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <h4 id="modal-title"></h4>
+          <p>No Content</p>
+          <button class="close">CLOSE</button>
+        </div>
+      </div>
     </div>
     <script src="./app.js"></script>
   </body>

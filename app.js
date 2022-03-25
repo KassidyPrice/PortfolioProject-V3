@@ -12,12 +12,13 @@ function removeActiveClasses() {
 }
 
 let modal = document.getElementById('myModal')
+let img = document.querySelectorAll('.portrait')
 let span = document.getElementsByClassName('close')[0]
 
-function openDialog(title, button) {
-  button.addEventListener('click', () => {
+img.forEach((img) => {
+  portrait.addEventListener('click', () => {
     modal.style.display = 'block'
-    const test = document.getElementById('modal-title')
-    test.innerHTML = title
+    // const test = document.getElementById('modal-title')
+    // test.innerHTML = title
   })
-}
+})
